@@ -1,20 +1,26 @@
 import "./Navbar.css";
+
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="logo">
-        <span>GDG</span>
-        <span>RBU</span>
+
+      {/* GDG Logo */}
+      <div className="gdg-logo">
+        <span className="logo-shape red"></span>
+        <span className="logo-shape blue"></span>
+        <span className="logo-shape green"></span>
+        <span className="logo-shape yellow"></span>
       </div>
 
       <div className="nav-links">
-        <a href="#home">Home</a>
-        <a href="#events">Events</a>
-        <a href="#team">Team</a>
-        <a href="#faq">FAQs</a>
+        <a href="#home" className="nav-home">Home</a>
+        <a href="#team" className="nav-team">Team</a>
+        <a href="#events" className="nav-events">Events</a>
+        <a href="#gallery" className="nav-gallery">Gallery</a>
+        <a href="#portfolio" className="nav-portfolio">Portfolio</a>
+        <a href="#more" className="nav-more">More</a>
       </div>
 
-      <button className="join-button">Join Us</button>
     </nav>
   );
 }

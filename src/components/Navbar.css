@@ -1,64 +1,163 @@
 .navbar {
   width: 100%;
-  padding: 20px 60px;
+  padding: 20px 45px;
+  background: #ffffff;
+
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+
   box-sizing: border-box;
 }
 
-.logo {
+.nav-links {
+  width: 100%;
+
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 22px;
-  font-weight: 700;
-}
+  justify-content: space-between;
 
-.logo span:first-child {
-  color: #4285f4;
-}
-
-.logo span:last-child {
-  color: #34a853;
-}
-
-.nav-links {
-  display: flex;
-  gap: 35px;
+  gap: 30px;
 }
 
 .nav-links a {
-  color: #202124;
+  min-width: 135px;
+  padding: 16px 28px;
+
+  border: 3px solid #111111;
+  border-radius: 13px;
+
+  color: #111111;
   text-decoration: none;
-  font-size: 16px;
+
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+
+  box-shadow: 7px 7px 0 #111111;
+
+  box-sizing: border-box;
 }
+
+/* Individual colors */
+
+.nav-home {
+  background: #4d9bf5;
+}
+
+.nav-team {
+  background: #ff6369;
+}
+
+.nav-events {
+  background: #ffc400;
+}
+
+.nav-gallery {
+  background: #00d875;
+}
+
+.nav-portfolio {
+  background: #747cf2;
+}
+
+.nav-more {
+  background: #4d9bf5;
+}
+
+/* Hover */
 
 .nav-links a:hover {
-  color: #4285f4;
-}
-
-.join-button {
-  padding: 12px 24px;
-  border: none;
-  border-radius: 25px;
-  background-color: #4285f4;
-  color: white;
-  font-size: 15px;
-  cursor: pointer;
-}
-
-.join-button:hover {
-  background-color: #3367d6;
+  transform: translate(3px, 3px);
+  box-shadow: 4px 4px 0 #111111;
 }
 
 /* Mobile */
+
 @media (max-width: 768px) {
   .navbar {
-    padding: 18px 25px;
+    padding: 15px 20px;
   }
 
   .nav-links {
-    display: none;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
+
+  .nav-links a {
+    min-width: 110px;
+    padding: 12px 18px;
+    font-size: 18px;
+  }
+}
+/* =========================
+   GDG LOGO
+========================= */
+
+.gdg-logo {
+  position: relative;
+  width: 100px;
+  height: 85px;
+  flex-shrink: 0;
+}
+
+.logo-shape {
+  position: absolute;
+
+  width: 65px;
+  height: 38px;
+
+  border: 3px solid #111111;
+  border-radius: 25px;
+
+  box-sizing: border-box;
+}
+
+
+/* RED - top left */
+
+.logo-shape.red {
+  background: #ff2d2d;
+
+  top: 8px;
+  left: 8px;
+
+  transform: rotate(-35deg);
+}
+
+
+/* BLUE - bottom left */
+
+.logo-shape.blue {
+  background: #2584e8;
+
+  top: 40px;
+  left: 8px;
+
+  transform: rotate(35deg);
+}
+
+
+/* GREEN - top right */
+
+.logo-shape.green {
+  background: #00a94f;
+
+  top: 8px;
+  right: 5px;
+
+  transform: rotate(35deg);
+}
+
+
+/* YELLOW - bottom right */
+
+.logo-shape.yellow {
+  background: #ffad00;
+
+  top: 40px;
+  right: 5px;
+
+  transform: rotate(-35deg);
 }
