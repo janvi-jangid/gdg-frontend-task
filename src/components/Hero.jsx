@@ -4,9 +4,11 @@ function Hero() {
     <section className="hero" id="home">
       <div className="hero-content">
         <h1>
-          GOOGLE DEVELOPER
-          <br />
-          GROUPS, RBU
+        GOOGLE
+        <br />
+        DEVELOPER
+        <br />
+        GROUPS, RBU
         </h1>
 
         <p>

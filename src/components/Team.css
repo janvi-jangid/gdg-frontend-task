@@ -89,3 +89,8 @@
   display: block;
   object-fit: contain;
 }
+
+.dark-mode .team,
+.dark-mode .team * {
+  color: #111111;
+}

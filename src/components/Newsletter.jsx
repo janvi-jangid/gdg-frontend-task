@@ -4,12 +4,12 @@ function Newsletter() {
     <section className="newsletter">
       <div className="newsletter-header">
         <div className="gdg-logo">
-            <div className="gdg-logo">
+            
                 <span className="logo-shape red"></span>
                 <span className="logo-shape blue"></span>
                 <span className="logo-shape green"></span>
                 <span className="logo-shape yellow"></span>
-            </div>
+            
         </div>
 
         <h2>Google Developer Groups</h2>

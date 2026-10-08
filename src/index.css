@@ -12,3 +12,178 @@ body {
 
   background-size: 40px 40px;
 }
+
+/* =========================
+   DARK MODE
+========================= */
+
+.page {
+  min-height: 100vh;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.dark-mode {
+  background-color: #171717;
+  color: #ffffff;
+}
+
+.dark-mode .navbar {
+  background-color: #171717;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+
+  background-image:
+    linear-gradient(#e8e8e8 1px, transparent 1px),
+    linear-gradient(90deg, #e8e8e8 1px, transparent 1px);
+
+  background-size: 40px 40px;
+
+  color: #111111;
+}
+
+/* =========================
+   PAGE
+========================= */
+
+.page {
+  min-height: 100vh;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+.dark-mode {
+  background-color: #171717;
+  color: #ffffff;
+
+  background-image:
+    linear-gradient(#ffffff 1px, transparent 1px),
+    linear-gradient(90deg, #ffffff 1px, transparent 1px);
+
+  background-size: 40px 40px;
+}
+
+.dark-mode .navbar {
+  background-color: #171717;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+
+  background-image:
+    linear-gradient(#e8e8e8 1px, transparent 1px),
+    linear-gradient(90deg, #e8e8e8 1px, transparent 1px);
+
+  background-size: 40px 40px;
+
+  color: #111111;
+}
+
+/* =========================
+   PAGE
+========================= */
+
+.page {
+  min-height: 100vh;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+.dark-mode {
+  background-color: #171717;
+  color: #8b8a8a;
+
+  background-image:
+    linear-gradient(#ffffff 1px, transparent 1px),
+    linear-gradient(90deg, #ffffff 1px, transparent 1px);
+
+  background-size: 40px 40px;
+}
+
+.dark-mode .navbar {
+  background-color: #322f2f;
+}
+
+/* =========================
+   DARK MODE TEXT
+========================= */
+
+.dark-mode,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode p,
+.dark-mode span,
+.dark-mode li {
+  color: #ffffff;
+}
+
+.dark-mode a {
+  color: #ffffff;
+}
+
+/* =========================
+   DARK MODE - HERO
+========================= */
+
+.dark-mode .hero h1,
+.dark-mode .hero h2,
+.dark-mode .hero p {
+  color: #ffffff;
+}
+
+/* =========================
+   THEME BUTTON
+========================= */
+
+.theme-button {
+  border: 3px solid #111111;
+  background: #ffffff;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.theme-button:hover {
+  transform: scale(1.08);
+}
+
+/* =========================
+   DARK MODE - NEWSLETTER
+========================= */
+
+.dark-mode .newsletter {
+  background-color: #8b8a8a !important;
+  color: #121111 !important;
+}
+
+.dark-mode .newsletter h2,
+.dark-mode .newsletter p,
+.dark-mode .newsletter h3,
+.dark-mode .newsletter strong {
+  color: #111111 !important;
+}

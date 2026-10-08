@@ -1,6 +1,6 @@
 import "./Navbar.css";
 
-function Navbar() {
+function Navbar({ darkMode, setDarkMode }) {
   return (
     <nav className="navbar">
 
@@ -19,6 +19,13 @@ function Navbar() {
         <a href="#gallery" className="nav-gallery">Gallery</a>
         <a href="#portfolio" className="nav-portfolio">Portfolio</a>
         <a href="#more" className="nav-more">More</a>
+
+        <button
+          className="theme-button"
+          onClick={() => setDarkMode(!darkMode)}
+        >
+          {darkMode ? "☀️" : "🌙"}
+        </button>
       </div>
 
     </nav>

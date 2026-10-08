@@ -166,3 +166,11 @@
 
   transform: rotate(-35deg);
 }
+
+.nav-links a {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.theme-button {
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}

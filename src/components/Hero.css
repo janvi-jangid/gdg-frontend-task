@@ -1,75 +1,104 @@
 .hero {
-  min-height: 600px;
-  padding: 80px 60px;
+  min-height: 650px;
+  padding: 80px 9%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  gap: 70px;
   box-sizing: border-box;
 }
 
 .hero-content {
-  max-width: 550px;
+  max-width: 600px;
 }
 
 .hero-content h1 {
-  font-size: 56px;
-  line-height: 1;
-  margin-bottom: 25px;
+  font-size: 52px;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  margin: 0 0 28px;
   color: #111111;
 }
 
 .hero-content p {
-  max-width: 450px;
+  max-width: 500px;
   font-size: 18px;
   line-height: 1.6;
-  margin-bottom: 30px;
+  margin: 0 0 35px;
   color: #555555;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 15px;
+  gap: 18px;
 }
 
 .hero-buttons button {
-  padding: 13px 24px;
-  border: 1px solid #111111;
+  padding: 14px 28px;
+  border: 2px solid #111111;
   background: white;
+  color: #111111;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 600;
+
+  box-shadow: 5px 5px 0 #111111;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.hero-buttons button:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 2px 2px 0 #111111;
 }
 
 .hero-buttons button:first-child {
   background: #111111;
   color: white;
 }
+/* =========================
+   HERO GRAPHIC
+========================= */
 
 .hero-graphic {
-  width: 380px;
-  height: 300px;
+  width: 420px;
+  height: 360px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  flex-shrink: 0;
 }
 
 .graphic-box {
-  width: 330px;
-  height: 220px;
+  width: 360px;
+  height: 250px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   background: #111111;
-  border-radius: 18px;
+  border-radius: 24px;
+
+  border: 3px solid #111111;
+  box-shadow: 8px 8px 0 #ffffff;
+
+  transition: transform 0.3s ease;
+}
+
+.graphic-box:hover {
+  transform: translateY(-8px);
 }
 
 /* Search Bar */
 
 .search-bar {
-  width: 250px;
-  height: 48px;
+  width: 285px;
+  height: 55px;
 
   padding: 0 8px 0 18px;
 
@@ -82,36 +111,63 @@
   background: #ffffff;
 
   border: 3px solid #111111;
-  border-radius: 8px;
+  border-radius: 10px;
 
   color: #111111;
 
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.search-bar span {
+  color: #111111;
 }
 
 .search-bar button {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
 
   border: none;
-  border-radius: 5px;
+  border-radius: 7px;
 
   background: #111111;
   color: #ffffff;
 
-  font-size: 20px;
-
+  font-size: 22px;
   cursor: pointer;
+
+  transition: transform 0.2s ease;
 }
 
-/* Mobile */
+.search-bar button:hover {
+  transform: scale(1.08);
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+.dark-mode .hero-content h1,
+.dark-mode .hero-content p {
+  color: #ffffff !important;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 768px) {
+
   .hero {
     min-height: auto;
-    padding: 60px 25px;
+    padding: 70px 25px;
     flex-direction: column;
     text-align: center;
+    gap: 45px;
   }
 
   .hero-content {
@@ -119,11 +175,14 @@
   }
 
   .hero-content h1 {
-    font-size: 40px;
+    font-size: 42px;
+    line-height: 1.05;
   }
 
   .hero-content p {
     font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-buttons {
@@ -133,6 +192,23 @@
 
   .hero-graphic {
     width: 100%;
-    height: 250px;
+    height: 280px;
+  }
+
+  .graphic-box {
+    width: 310px;
+    height: 210px;
+
+    border-radius: 20px;
+  }
+
+  .search-bar {
+    width: 250px;
+    height: 50px;
+  }
+
+  .search-bar button {
+    width: 36px;
+    height: 36px;
   }
 }

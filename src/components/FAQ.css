@@ -88,3 +88,13 @@
     font-size: 13px;
   }
 }
+
+.dark-mode .faq-question,
+.dark-mode .faq-question * {
+  color: #111111;
+}
+
+.dark-mode .faq-answer,
+.dark-mode .faq-answer * {
+  color: #111111;
+}

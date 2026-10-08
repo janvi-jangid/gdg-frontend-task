@@ -284,3 +284,24 @@
   right: -20px;
   transform: rotate(-35deg);
 }
+/* =========================
+   DARK MODE - NEWSLETTER
+========================= */
+
+.dark-mode .newsletter-header h2,
+.dark-mode .newsletter-header p,
+.dark-mode .newsletter-header strong,
+.dark-mode .newsletter-header span {
+  color: #ffffff !important;
+}
+
+.dark-mode .newsletter {
+  color: #ffffff;
+}
+
+.dark-mode .newsletter p,
+.dark-mode .newsletter h2,
+.dark-mode .newsletter h3,
+.dark-mode .newsletter strong {
+  color: #ffffff !important;
+}
