@@ -62,8 +62,9 @@ src/
 ├── App.css
 ├── index.css
 └── main.jsx
-
+```
 ---
+
 
 ## 🔀 Git & GitHub Commands Used
 
