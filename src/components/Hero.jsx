@@ -21,8 +21,13 @@ function Hero() {
       </div>
 
       <div className="hero-graphic">
-        <div className="graphic-box"></div>
-      </div>
+        <div className="graphic-box">
+            <div className="search-bar">
+            <span>gdg_rbu</span>
+            <button>⌕</button>
+            </div>
+        </div>
+        </div>
     </section>
   );
 }

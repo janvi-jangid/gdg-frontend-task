@@ -1,41 +1,19 @@
-import { FaInstagram } from "react-icons/fa";
-import "./Footer.css";
-
 function Footer() {
   return (
     <footer className="footer">
-
-      <div className="footer-social">
-        <FaInstagram />
+      <div className="footer-art">
+        <span className="shape shape-green"></span>
+        <span className="shape shape-yellow"></span>
+        <span className="shape shape-red"></span>
+        <span className="shape shape-blue"></span>
+        <span className="shape shape-circle-yellow"></span>
+        <span className="shape shape-green-square"></span>
+        <span className="shape shape-red-circle"></span>
+        <span className="shape shape-blue-square"></span>
+        <span className="shape shape-green-small"></span>
       </div>
-
-      <div className="footer-decoration">
-        {/* Decorative shapes */}
-  <div className="footer-shapes">
-    <div className="shape green rectangle"></div>
-    <div className="shape yellow diamond"></div>
-    <div className="shape red rectangle"></div>
-    <div className="shape yellow circle"></div>
-    <div className="shape green diamond"></div>
-    <div className="shape blue circle"></div>
-    <div className="shape red semicircle"></div>
-  </div>
-      </div>
-
     </footer>
   );
 }
 
 export default Footer;
-
-
-{/* Decorative shapes */}
-  <div className="footer-shapes">
-    <div className="shape green rectangle"></div>
-    <div className="shape yellow diamond"></div>
-    <div className="shape red rectangle"></div>
-    <div className="shape yellow circle"></div>
-    <div className="shape green diamond"></div>
-    <div className="shape blue circle"></div>
-    <div className="shape red semicircle"></div>
-  </div>
