@@ -1,0 +1,219 @@
+.newsletter {
+  width: calc(100% - 40px);
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 45px;
+
+  border: 3px solid #111111;
+  background: #ffffff;
+  box-shadow: 8px 8px 0 #111111;
+}
+
+.newsletter-header {
+  text-align: center;
+}
+
+.newsletter-header h2 {
+  margin: 15px 0 10px;
+  font-size: 36px;
+  line-height: 1;
+}
+
+.newsletter-header p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.gdg-logo {
+  width: 100px;
+  height: 70px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.gdg-logo span {
+  position: absolute;
+  width: 55px;
+  height: 28px;
+  border: 3px solid #111111;
+  border-radius: 20px;
+}
+
+.logo-red {
+  top: 5px;
+  left: 8px;
+  background: #ea4335;
+  transform: rotate(-35deg);
+}
+
+.logo-blue {
+  top: 30px;
+  left: 8px;
+  background: #4285f4;
+  transform: rotate(35deg);
+}
+
+.logo-green {
+  top: 5px;
+  right: 8px;
+  background: #34a853;
+  transform: rotate(35deg);
+}
+
+.logo-yellow {
+  top: 30px;
+  right: 8px;
+  background: #fbbc05;
+  transform: rotate(-35deg);
+}
+
+.newsletter-divider {
+  margin: 40px 0 35px;
+  border-top: 3px dashed #111111;
+}
+
+.newsletter-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-card {
+  min-height: 95px;
+  padding: 20px 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  border: 3px solid #111111;
+  box-shadow: 6px 6px 0 #111111;
+}
+
+.address-card {
+  background: #5d9cec;
+}
+
+.email-card {
+  background: #ffc107;
+}
+
+.contact-icon {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.contact-card strong {
+  font-size: 18px;
+}
+
+.contact-card p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.social-card {
+  min-height: 200px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 3px solid #111111;
+  background: #6c63ff;
+  box-shadow: 6px 6px 0 #111111;
+}
+
+.social-card h3 {
+  margin-bottom: 25px;
+  color: white;
+  font-size: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 3px solid #111111;
+  color: #111111;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  background: #ff6b6b;
+}
+
+.social-links a:nth-child(2) {
+  background: #4285f4;
+}
+
+.social-links a:nth-child(3) {
+  background: #45d483;
+}
+
+.gdg-logo {
+  position: relative;
+  width: 150px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+/* Common shape */
+.logo-shape {
+  position: absolute;
+  width: 90px;
+  height: 42px;
+
+  border: 3px solid #111111;
+  border-radius: 30px;
+}
+
+/* RED - top left */
+.logo-red {
+  background: #ea4335;
+  top: 15px;
+  left: 5px;
+  transform: rotate(-35deg);
+}
+
+/* BLUE - bottom left */
+.logo-blue {
+  background: #4285f4;
+  top: 55px;
+  left: 5px;
+  transform: rotate(35deg);
+}
+
+/* GREEN - top right */
+.logo-green {
+  background: #00a651;
+  top: 15px;
+  right: 5px;
+  transform: rotate(35deg);
+}
+
+/* YELLOW - bottom right */
+.logo-yellow {
+  background: #f9ab00;
+  top: 55px;
+  right: 5px;
+  transform: rotate(-35deg);
+}

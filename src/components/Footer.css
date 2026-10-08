@@ -1,0 +1,23 @@
+.footer {
+  width: 100%;
+  background: #1f1f1f;
+  padding-top: 25px;
+  overflow: hidden;
+}
+
+.footer-social {
+  height: 55px;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  font-size: 22px;
+}
+
+.footer-decoration {
+  width: calc(100% - 10px);
+  height: 140px;
+  margin: 10px 5px 0;
+  background: white;
+  overflow: hidden;
+}
